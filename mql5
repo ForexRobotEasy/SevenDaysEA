@@ -1,0 +1,68 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                               SevenDaysEA.mq5    |
+//|                          Developed by Forex Robot Easy Team       |
+//|                                  Website: forexroboteasy.com      |
+//|                                                                  |
+//|                    Terms of Reference for Writing Code            |
+//|                        for SevenDaysEA Expert Advisor             |
+//+------------------------------------------------------------------+
+
+// Define input parameters
+input string currencyPairs = 'AUDCAD, AUDNZD, NZDCAD';
+
+// Define set-files for each currency pair
+input string AUDCAD_set1 = 'AUDCAD_set1.set';
+input string AUDCAD_set2 = 'AUDCAD_set2.set';
+input string AUDCAD_set3 = 'AUDCAD_set3.set';
+input string AUDCAD_set4 = 'AUDCAD_set4.set';
+input string AUDCAD_set5 = 'AUDCAD_set5.set';
+input string AUDCAD_set6 = 'AUDCAD_set6.set';
+input string AUDCAD_set7 = 'AUDCAD_set7.set';
+input string AUDCAD_set8 = 'AUDCAD_set8.set';
+input string AUDCAD_set9 = 'AUDCAD_set9.set';
+input string AUDCAD_set10 = 'AUDCAD_set10.set';
+
+input string AUDNZD_set1 = 'AUDNZD_set1.set';
+input string AUDNZD_set2 = 'AUDNZD_set2.set';
+input string AUDNZD_set3 = 'AUDNZD_set3.set';
+input string AUDNZD_set4 = 'AUDNZD_set4.set';
+input string AUDNZD_set5 = 'AUDNZD_set5.set';
+input string AUDNZD_set6 = 'AUDNZD_set6.set';
+input string AUDNZD_set7 = 'AUDNZD_set7.set';
+input string AUDNZD_set8 = 'AUDNZD_set8.set';
+input string AUDNZD_set9 = 'AUDNZD_set9.set';
+input string AUDNZD_set10 = 'AUDNZD_set10.set';
+
+input string NZDCAD_set1 = 'NZDCAD_set1.set';
+input string NZDCAD_set2 = 'NZDCAD_set2.set';
+input string NZDCAD_set3 = 'NZDCAD_set3.set';
+input string NZDCAD_set4 = 'NZDCAD_set4.set';
+input string NZDCAD_set5 = 'NZDCAD_set5.set';
+input string NZDCAD_set6 = 'NZDCAD_set6.set';
+input string NZDCAD_set7 = 'NZDCAD_set7.set';
+input string NZDCAD_set8 = 'NZDCAD_set8.set';
+input string NZDCAD_set9 = 'NZDCAD_set9.set';
+input string NZDCAD_set10 = 'NZDCAD_set10.set';
+
+// Define necessary trading functions
+void OnTick()
+{
+    // Implement fully automated grid system
+    // Code for grid system goes here
+}
+
+void OnInit()
+{
+    // Install the bot on the chart of the corresponding currency pair
+    ChartOpen('AUDCAD', PERIOD_CURRENT);
+    ChartOpen('AUDNZD', PERIOD_CURRENT);
+    ChartOpen('NZDCAD', PERIOD_CURRENT);
+}
+
+void OnDeinit(const int reason)
+{
+    // Code for deinitialization goes here
+}
+
+//+------------------------------------------------------------------+
